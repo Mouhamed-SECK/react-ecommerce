@@ -2,10 +2,7 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 
 import HomePage from "./components/pages/homepage/hompage";
-
-const HatsPage = () => {
-  return <div>Hats Page</div>;
-};
+import ShopPage from "./components/pages/shop/ShopPage";
 
 class App extends React.Component {
   render() {
@@ -13,7 +10,7 @@ class App extends React.Component {
       <div>
         <Switch>
           <Route exact path="/" component={HomePage} />
-          <Route path="/" component={HatsPage} />
+          <Route path="/shop" component={ShopPage} />
         </Switch>
       </div>
     );
